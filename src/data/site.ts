@@ -1,57 +1,54 @@
 export const site = {
-  name: "Sara Knorst",
+  name: "Juliana Birk",
   role: "Nutricionista",
   city: "Ivoti",
   state: "RS",
   region: "Ivoti e atendimento online",
-  // TODO: Confirmar CRN com a profissional antes da publicação definitiva.
-  crn: "XXXXX",
-  credentials: "Nutricionista · CRN XXXXX", // TODO: atualizar com o CRN real.
-  phoneDisplay: "(51) 98028-9339",
-  phoneLink: "5551980289339",
-  telLink: "tel:+5551980289339",
-  email: "saraknorst@gmail.com",
-  instagram: "https://www.instagram.com/nutri.saraknorst/",
+  crn: "17457",
+  credentials: "Nutricionista · CRN 17457",
+  phoneDisplay: "(51) 99950-7010",
+  phoneLink: "5551999507010",
+  telLink: "tel:+5551999507010",
+  instagram: "https://www.instagram.com/julibirk/",
   hours: [
     { days: "Terça a sexta", time: "09:00 às 20:00" },
     { days: "Sábado", time: "08:00 às 17:00" },
     { days: "Domingo e segunda", time: "Fechado" },
   ],
-  googleProfile: "https://www.google.com/maps/place/Nutricionista+Sara+Knorst/@-29.5966783,-51.1613002,17z/data=!4m15!1m8!3m7!1s0x951945dcb30cab0b:0x2bcbe6a1b4193e19!2sNutricionista+Sara+Knorst!8m2!3d-29.5966524!4d-51.1615069!10e5!16s%2Fg%2F11v702zfvf!3m5!1s0x951945dcb30cab0b:0x2bcbe6a1b4193e19!8m2!3d-29.5966524!4d-51.1615069!16s%2Fg%2F11v702zfvf?entry=ttu",
-  mapsEmbedUrl: "https://maps.google.com/maps?q=-29.5966524,-51.1615069&z=17&hl=pt-BR&output=embed",
-  mapsUrl: "https://www.google.com/maps/place/Nutricionista+Sara+Knorst/@-29.5966524,-51.1615069,17z",
+  googleProfile: "https://www.google.com/maps/place/Nutricionista+Juliana+Birk/@-29.5945068,-51.161358,17z/data=!3m1!4b1!4m6!3m5!1s0x951945e9671e0b0b:0x411aa5e6eb9347a5!8m2!3d-29.5945068!4d-51.161358!16s%2Fg%2F11xd18p__7",
+  mapsEmbedUrl: "https://maps.google.com/maps?q=-29.5945068,-51.161358&z=17&hl=pt-BR&output=embed",
+  mapsUrl: "https://www.google.com/maps/place/Nutricionista+Juliana+Birk/@-29.5945068,-51.161358,17z",
   seo: {
-    // TODO: substituir pelo domínio final antes da publicação.
-    title: "Nutricionista em Ivoti | Sara Knorst · Emagrecimento Feminino",
+    title: "Nutricionista em Ivoti | Juliana Birk · Nutrição Funcional e Performance",
     description:
-      "Nutricionista em Ivoti com foco em emagrecimento feminino. Acompanhamento estratégico, prático e sem dietas restritivas, presencial e online.",
-    url: "https://studiotche.github.io/nutricionista-saraknorst/",
-    ogImage: "/images/nutricionista-ivoti-hero-sara.webp",
+      "Nutricionista em Ivoti com abordagem funcional baseada em ciência. Emagrecimento, performance esportiva e reeducação alimentar, presencial e online.",
+    url: "https://studiotche.github.io/nutricionista-julianabirk/",
+    ogImage: "/images/nutricionista-ivoti-hero-juliana.webp",
   },
   hero: {
     eyebrow: "Atendimento presencial e online",
-    title: "Nutricionista em Ivoti, Sara Knorst",
-    titleHighlight: "Sara Knorst",
-    tagline: "Emagrecimento feminino com estratégia, sem restrição.",
+    title: "Nutricionista em Ivoti, Juliana Birk",
+    titleHighlight: "Juliana Birk",
+    tagline: "Nutrição funcional baseada em ciência, sem fórmulas prontas.",
     description:
-      "Mais de 400 mulheres já transformaram a relação com a comida e com o corpo em um acompanhamento prático, possível e sem dietas impossíveis.",
+      "Emagrecimento e performance esportiva com estratégia, acompanhamento individualizado e foco em resultados que fazem sentido para a sua vida.",
   },
   about: {
-    eyebrow: "Olá, eu sou a Sara!",
-    title: "Nutrição feminina para transformar sua relação com a comida",
-    titleHighlight: "sua relação com a comida",
+    eyebrow: "Olá, eu sou a Juliana!",
+    title: "Nutrição funcional e performance para uma relação saudável com a comida",
+    titleHighlight: "relação saudável com a comida",
     paragraphs: [
-      "Meu trabalho é ajudar mulheres a emagrecerem com estratégia, sem abrir mão de comer bem e sem viver de restrição. Acredito que resultado não vem de comer menos, e sim de comer do jeito certo para o seu corpo e a sua rotina.",
-      "Por isso, cada acompanhamento é construído a partir da sua história, das suas preferências e dos seus objetivos — com metas realistas e passos que cabem na vida real.",
-      "Nada de fórmulas prontas ou dietas genéricas: estratégia, constância e um plano que faça sentido para você, para que o resultado venha e permaneça.",
+      "Meu trabalho une nutrição funcional baseada em ciência, emagrecimento e performance esportiva. Acredito que comer bem é ferramenta de saúde, energia e resultado — dentro e fora do esporte.",
+      "Cada acompanhamento parte da sua história, da sua rotina e dos seus objetivos, com um plano realista, sem restrições desnecessárias e sem dietas genéricas.",
+      "Esportista amadora, sei na prática como alimentação, treino e consistência caminham juntos. Vamos construir estratégias que você consiga manter.",
     ],
   },
   assets: {
-    logo: "/images/logo-saraknorst.svg",
-    hero: "/images/nutricionista-ivoti-hero-sara.webp",
-    heroMobile: "/images/nutricionista-ivoti-hero-sara-mobile.webp",
-    about: "/images/nutricionista-ivoti-sobre-sara.webp",
-    processBg: "/images/nutricionista-ivoti-sara.webp",
+    logo: "/images/logo-julianabirk.svg",
+    hero: "/images/nutricionista-ivoti-hero-juliana.webp",
+    heroMobile: "/images/nutricionista-ivoti-hero-juliana-mobile.webp",
+    about: "/images/nutricionista-ivoti-sobre-juliana.webp",
+    processBg: "/images/nutricionista-ivoti-juliana.webp",
   },
 } as const;
 
@@ -59,103 +56,51 @@ export const site = {
 export const specialties = [
   {
     number: "01",
-    title: "Emagrecimento feminino",
-    text: "Um método estratégico para emagrecer sem restrição, com foco em resultados que duram e em uma relação saudável com a comida.",
+    title: "Nutrição funcional",
+    text: "Abordagem baseada em ciência que olha para o seu corpo como um todo, identificando o que funciona para você.",
     detail:
-      "Aqui o foco não é a balança de uma semana, mas a construção de hábitos que se mantêm. O acompanhamento começa com uma avaliação completa e evolui em etapas graduais, com metas realistas e sem dietas impossíveis.",
+      "O trabalho considera histórico, exames, rotina e objetivos para construir um plano individualizado, sem fórmulas prontas e sem modismos.",
   },
   {
     number: "02",
-    title: "Reeducação alimentar",
-    text: "Aprender a comer de um jeito novo, sem culpa e sem abrir mão do prazer, em um processo feito para a sua rotina.",
+    title: "Emagrecimento",
+    text: "Estratégia para emagrecer com saúde, sem passar fome e sem dietas impossíveis de manter.",
     detail:
-      "Você não vai sair de dieta, vai sair da dieta. O trabalho identifica o que funciona para o seu dia a dia e constrói um plano flexível, com orientações práticas que você consegue manter.",
+      "O foco está em hábitos sustentáveis e em uma relação saudável com a comida, com metas realistas e acompanhamento de perto.",
   },
   {
     number: "03",
-    title: "Relação com a comida",
-    text: "Apoio para quem quer parar de fazer dieta, entender os sinais do corpo e encerrar o ciclo de restrição e exagero.",
+    title: "Performance esportiva",
+    text: "Nutrição para quem treina e quer mais energia, melhor rendimento e recuperação adequada.",
     detail:
-      "Comer pouco não é o caminho. O acompanhamento ajuda a reconstruir sua confiança nas escolhas, com escuta sem julgamentos e estratégias práticas para o dia a dia.",
+      "Atleta ou esportista amador, o plano é montado a partir do seu esporte, do seu treino e dos seus objetivos de performance.",
   },
   {
     number: "04",
-    title: "Saúde e qualidade de vida",
-    text: "Planejamento alimentar para quem quer mais energia, melhor disposição e uma rotina que sustente saúde e bem-estar.",
+    title: "Reeducação alimentar",
+    text: "Aprender a comer de um jeito novo, sem culpa, com liberdade e prazer à mesa.",
     detail:
-      "Comer melhor impacta tudo: energia, sono, disposição e autoestima. O plano é montado a partir do seu histórico, dos seus exames e dos seus objetivos, com ajustes ao longo do tempo.",
+      "O processo ajuda a organizar a rotina alimentar, priorizar alimentos de verdade e construir escolhas que você consegue manter no dia a dia.",
   },
   {
     number: "05",
     title: "Acompanhamento online",
-    text: "Atendimento por videochamada com a mesma estratégia e atenção do presencial, para você evoluir de onde estiver.",
+    text: "Atendimento por videochamada com a mesma estratégia e atenção do presencial, de onde você estiver.",
     detail:
-      "O acompanhamento online segue o mesmo método: avaliação completa, plano individualizado e suporte contínuo pelo WhatsApp, com privacidade e praticidade.",
+      "O acompanhamento online segue o mesmo método: avaliação completa, plano individualizado e suporte contínuo pelo WhatsApp.",
   },
 ] as const;
 
 export const pillars = [
-  ["Nutricional", "Estratégias construídas a partir das suas necessidades, preferências e objetivos."],
+  ["Funcional", "Estratégias baseadas em ciência, construídas a partir das suas necessidades e objetivos."],
   ["Comportamental", "Atenção à rotina e aos hábitos que influenciam suas escolhas todos os dias."],
   ["Estratégico", "Um plano prático, flexível e sem restrição, feito para caber na sua vida."],
 ] as const;
 
-// Depoimentos reais coletados do Google (perfil: 5,0 estrelas · 60 avaliações).
-// Datas aproximadas a partir do indicador "um mês atrás" (jul/2026) — confirmar antes da publicação.
-export const testimonials: {
-  name: string;
-  date: string;
-  dateTime: string;
-  text: string;
-}[] = [
-  {
-    name: "Sandra Linck",
-    date: "15/07/2026",
-    dateTime: "2026-07-15",
-    text: "A Nutricionista Sara foi a divisora de águas na minha vida. De forma prática, estou conseguindo um emagrecimento lindo, comendo comida de verdade! Sem cortar isso ou aquilo, ela me ensinou que posso comer o que gosto de forma bem dosada. Em pouco mais de 7 meses, perdi 12 kg e hoje sou uma pessoa muito mais feliz!",
-  },
-  {
-    name: "Luana Knorst",
-    date: "15/07/2026",
-    dateTime: "2026-07-15",
-    text: "Ótima profissional! Entendeu minha rotina para juntas montarmos um plano possível, prático, flexível e que trouxe e continua trazendo ótimos resultados!",
-  },
-  {
-    name: "Ana Lúcia Reder",
-    date: "15/07/2026",
-    dateTime: "2026-07-15",
-    text: "A Sara é maravilhosa nutricionista prática: seu plano alimentar é com o que você tem em casa, e consegue manter fácil, atenciosa e incentivadora.",
-  },
-  {
-    name: "Thamires Stoffel-Levy",
-    date: "15/07/2026",
-    dateTime: "2026-07-15",
-    text: "Se você procura dietas que realmente funcionam, que se adaptam à sua rotina e paladar, Sara é a nutricionista mais indicada: vai te ajudar, assim como vem me ajudando! Recomendo muito!!",
-  },
-  {
-    name: "Érica Wagner",
-    date: "04/08/2026",
-    dateTime: "2026-08-04",
-    text: "Sempre muito prestativa. Uma dieta variada e eficiente, adaptada à minha rotina, e sem passar fome.",
-  },
-  {
-    name: "Dienifer Schneider",
-    date: "15/07/2026",
-    dateTime: "2026-07-15",
-    text: "Uma excelente profissional, te ajuda a atingir suas metas comendo bem e saudável!",
-  },
-  {
-    name: "Débora Dresch Da Rosa",
-    date: "15/07/2026",
-    dateTime: "2026-07-15",
-    text: "É muito atenciosa e procura auxiliar nas nossas maiores dificuldades. Gostei muito do seu atendimento.",
-  },
-];
-
 export const locations = [
   {
     city: "Ivoti",
-    address: "Avenida Presidente Lucena, 3071 · sala 06",
+    address: "Avenida Presidente Lucena, 3315 · sala 302",
     district: "Centro · Ivoti/RS",
     type: "Presencial",
   },
@@ -168,7 +113,7 @@ export const locations = [
 ] as const;
 
 export const faqs = [
-  ["Onde acontecem as consultas presenciais?", "Os atendimentos presenciais acontecem em Ivoti, na Avenida Presidente Lucena, 3071, sala 06, no Centro."],
+  ["Onde acontecem as consultas presenciais?", "Os atendimentos presenciais acontecem em Ivoti, na Avenida Presidente Lucena, 3315, sala 302, no Centro."],
   ["Quais os horários de atendimento?", "Os atendimentos acontecem de terça a sexta, das 09h às 20h, e aos sábados, das 08h às 17h. Domingos e segundas o consultório está fechado. Para agendar, é só chamar no WhatsApp."],
   ["É possível consultar online?", "Sim. O atendimento online permite realizar a consulta com privacidade e conforto, de onde você estiver."],
   ["Como faço para agendar?", `Clique em qualquer botão de agendamento para conversar diretamente pelo WhatsApp ${site.phoneDisplay}.`],
@@ -185,4 +130,4 @@ export const faqs = [
   ["Como funciona o primeiro atendimento?", "O primeiro atendimento é uma conversa completa: história de saúde, rotina, preferências e objetivos. A partir dela, é construído um plano realista, em etapas."],
 ] as const;
 
-export const whatsappUrl = `https://wa.me/${site.phoneLink}?text=${encodeURIComponent("Olá, Nutri Sara! Quero mais informações sobre as consultas.")}`;
+export const whatsappUrl = `https://wa.me/${site.phoneLink}?text=${encodeURIComponent("Olá, Nutri Juliana! Quero mais informações sobre as consultas.")}`;

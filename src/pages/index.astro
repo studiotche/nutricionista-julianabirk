@@ -6,7 +6,6 @@ import {
   pillars,
   site,
   specialties,
-  testimonials,
   whatsappUrl,
 } from "../data/site";
 
@@ -22,7 +21,7 @@ const jsonLd = {
       name: `${site.role} ${site.name}`,
       jobTitle: site.role,
       url: site.seo.url,
-      image: `${site.seo.url}/images/nutricionista-ivoti-hero-sara.webp`,
+      image: `${site.seo.url}/images/nutricionista-ivoti-hero-juliana.webp`,
       telephone: `+${site.phoneLink}`,
       sameAs: [site.googleProfile, site.instagram],
       areaServed: ["Ivoti", "Atendimento online"],
@@ -31,7 +30,7 @@ const jsonLd = {
         name: `Consultório em ${location.city}`,
         address: {
           "@type": "PostalAddress",
-          streetAddress: location.address.replace(" · sala 06", ", sala 06"),
+          streetAddress: location.address.replace(" · sala 302", ", sala 302"),
           addressLocality: location.city,
           addressRegion: site.state,
           addressCountry: "BR",
@@ -42,7 +41,7 @@ const jsonLd = {
       "@type": "MedicalBusiness",
       "@id": `${site.seo.url}/#medicalbusiness`,
       name: `${site.role} ${site.name}`,
-      image: `${site.seo.url}/images/nutricionista-ivoti-hero-sara.webp`,
+      image: `${site.seo.url}/images/nutricionista-ivoti-hero-juliana.webp`,
       telephone: `+${site.phoneLink}`,
       priceRange: "$$",
       medicalSpecialty: "Nutrition",
@@ -67,7 +66,7 @@ const jsonLd = {
         name: `Consultório em ${location.city}`,
         address: {
           "@type": "PostalAddress",
-          streetAddress: location.address.replace(" · sala 06", ", sala 06"),
+          streetAddress: location.address.replace(" · sala 302", ", sala 302"),
           addressLocality: location.city,
           addressRegion: site.state,
           addressCountry: "BR",
@@ -83,13 +82,6 @@ const jsonLd = {
         acceptedAnswer: { "@type": "Answer", text: answer },
       })),
     },
-    ...testimonials.map((testimonial) => ({
-      "@type": "Review",
-      itemReviewed: { "@id": `${site.seo.url}/#medicalbusiness` },
-      author: { "@type": "Person", name: testimonial.name },
-      datePublished: testimonial.dateTime,
-      reviewBody: testimonial.text,
-    })),
   ],
 };
 ---
@@ -131,7 +123,7 @@ const jsonLd = {
       <nav class="desktop-nav" aria-label="Navegação principal">
         <a href="#sobre">Sobre</a><a href="#atendimentos">Atendimentos</a><a
           href="#metodo">Abordagem</a
-        ><a href="#depoimentos">Depoimentos</a><a href="#locais">Locais</a>
+        ><a href="#locais">Locais</a>
       </nav>
       <a
         class="button button-small"
@@ -159,7 +151,7 @@ const jsonLd = {
         aria-label="Fechar menu"><span aria-hidden="true">✕</span></button
       >
       <div class="menu-panel-head">
-        <span class="menu-brand">Sara Knorst</span><small class="kicker"
+        <span class="menu-brand">Juliana Birk</span><small class="kicker"
           >Nutricionista</small
         >
       </div>
@@ -167,7 +159,6 @@ const jsonLd = {
         <a href="#sobre">Sobre</a>
         <a href="#atendimentos">Atendimentos</a>
         <a href="#metodo">Abordagem</a>
-        <a href="#depoimentos">Depoimentos</a>
         <a href="#locais">Locais</a>
       </nav>
       <a
@@ -189,15 +180,15 @@ const jsonLd = {
           />
           <img
             src={asset(site.assets.hero)}
-            alt="Nutricionista Sara Knorst em consultório, atendimento em Ivoti e online"
+            alt="Nutricionista Juliana Birk, atendimento em Ivoti e online"
             width="1717"
             height="916"
             fetchpriority="high"
           />
         </picture>
         <div class="floating-card">
-          <span class="floating-kicker">Cuidado individual</span><strong
-            >Sem fórmulas prontas.</strong
+          <span class="floating-kicker">Baseada em ciência</span><strong
+            >Estratégia para a sua vida.</strong
           >
         </div>
       </div>
@@ -229,8 +220,8 @@ const jsonLd = {
 
     <section class="trust-strip" aria-label="Diferenciais do atendimento">
       <div class="container trust-grid">
-        <p><span>01</span> Escuta sem julgamentos</p><p>
-          <span>02</span> Estratégias personalizadas
+        <p><span>01</span> Baseada em ciência</p><p>
+          <span>02</span> Planos individualizados
         </p><p><span>03</span> Presencial e online</p>
       </div>
     </section>
@@ -324,66 +315,20 @@ const jsonLd = {
       </div>
     </section>
 
-    <section class="section testimonials-section" id="depoimentos">
-      <div class="container">
-        <div class="testimonial-heading">
-          <div>
-            <p class="eyebrow">Transformando vidas</p><h2>
-              Experiências de <span class="highlight">quem já começou</span>
-            </h2>
-          </div>
-          <div>
-            <p>
-              Relatos de pacientes sobre o cuidado recebido durante o
-              acompanhamento nutricional.
-            </p><a
-              class="text-link text-link-dark"
-              href={site.googleProfile}
-              target="_blank"
-              rel="noreferrer"
-              >Ver perfil no Google <span aria-hidden="true">↗</span></a
-            >
-          </div>
-        </div>
-        <div class="testimonial-grid">
-          {
-            testimonials.map((testimonial) => (
-              <figure class="testimonial-card">
-                <>
-                  <span class="quote-mark" aria-hidden="true">
-                    “
-                  </span>
-                  <blockquote>{testimonial.text}</blockquote>
-                  <figcaption>
-                    <>
-                      <strong>{testimonial.name}</strong>
-                      <time datetime={testimonial.dateTime}>
-                        {testimonial.date}
-                      </time>
-                    </>
-                  </figcaption>
-                </>
-              </figure>
-            ))
-          }
-        </div>
-      </div>
-    </section>
-
     <section class="section about-section" id="sobre">
       <div class="container about-grid">
         <div class="about-media">
           <div class="image-frame about-frame">
             <img
               src={asset(site.assets.about)}
-              alt="Nutricionista Sara Knorst em ambiente profissional com luz natural"
+              alt="Nutricionista Juliana Birk em ambiente profissional"
               width="1122"
               height="1402"
               loading="lazy"
             />
           </div>
           <div class="signature-card" aria-hidden="true">
-            <span>SK</span><small>estratégia que cabe na sua vida</small>
+            <span>JB</span><small>ciência e estratégia para sua vida</small>
           </div>
         </div>
         <div class="about-copy">
@@ -396,11 +341,11 @@ const jsonLd = {
           <p class="about-credentials">{site.credentials}</p>
           <div class="about-values">
             <div>
-              <strong>Consciência</strong><span
-                >para entender suas escolhas</span
+              <strong>Ciência</strong><span
+                >para orientar cada escolha</span
               >
             </div><div>
-              <strong>Autonomia</strong><span>para cuidar de si com leveza</span
+              <strong>Consistência</strong><span>para resultados que duram</span
               >
             </div>
           </div>
@@ -508,7 +453,7 @@ const jsonLd = {
             href={whatsappUrl}
             target="_blank"
             rel="noreferrer"
-            >Falar com Sara <span aria-hidden="true">↗</span></a
+            >Falar com Juliana <span aria-hidden="true">↗</span></a
           >
         </div>
       </div>
@@ -547,7 +492,7 @@ const jsonLd = {
         <div class="map-frame">
           <iframe
             src={site.mapsEmbedUrl}
-            title="Mapa do consultório da nutricionista Sara Knorst em Ivoti"
+            title="Mapa do consultório da nutricionista Juliana Birk em Ivoti"
             loading="lazy"
             allowfullscreen
             referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -568,7 +513,7 @@ const jsonLd = {
       </p><div class="footer-links">
         <a href={site.telLink}>Ligar: {site.phoneDisplay}</a
         ><a href={site.instagram} target="_blank" rel="noreferrer"
-          >Instagram @nutri.saraknorst</a
+          >Instagram @julibirk</a
         ><a href="#inicio"
           >Voltar ao início ↑</a
         >
@@ -598,7 +543,7 @@ const jsonLd = {
     href={whatsappUrl}
     target="_blank"
     rel="noreferrer"
-    aria-label="Olá, Nutri Sara! Quero mais informações sobre as consultas."
+    aria-label="Olá, Nutri Juliana! Quero mais informações sobre as consultas."
   >
     <img src={asset("/images/whatsapp.webp")} alt="" width="34" height="34" />
   </a>
