@@ -48,7 +48,7 @@ export const site = {
     hero: "/images/nutricionista-ivoti-hero-juliana.webp",
     heroMobile: "/images/nutricionista-ivoti-hero-juliana-mobile.webp",
     about: "/images/nutricionista-ivoti-sobre-juliana.webp",
-    processBg: "/images/nutricionista-ivoti-juliana.webp",
+    processBg: "/images/nutricionista-ivoti-sobre-juliana.webp",
   },
 } as const;
 
